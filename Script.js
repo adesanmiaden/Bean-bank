@@ -277,4 +277,3 @@ let sorted = false
   sorted = !sorted; 
 })
 
-const z = Array.from({length: 7}, (_, i) => i+1);
