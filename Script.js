@@ -227,13 +227,11 @@ btnTransfer.addEventListener('click', function(e){
     currentAccount.movements.push(-amount) 
     receiverAcc.movements.push(amount)
 
-    //Transfer Date
     currentAccount.movementsDates.push(new Date().toISOString());
     receiverAcc.movementsDates.push(new Date().toISOString());
 
     updateUI(currentAccount);
 
-    //Reset timer
     clearInterval(timer);
     timer = startLogOutTimer();
   }
